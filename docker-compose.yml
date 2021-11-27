@@ -5,16 +5,12 @@ services:
     image: testsman-backend:latest
     ports:
       - "8080:8080"
-    volumes:
-      - /home/ubuntu/images:/static/images/
 
-  testsman-frontend:
-    build: ./frontend
-    image: testsman-frontend:latest
-    ports:
-      - "80:3000"
-    volumes:
-      - /home/ubuntu/images:/static/images/
+  # testsman-frontend:
+  #   build: ./frontend
+  #   image: testsman-frontend:latest
+  #   ports:
+  #     - "80:3000"
 
   #   nginx:
   #     container_name: nginx-proxy
