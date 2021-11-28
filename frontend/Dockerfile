@@ -10,7 +10,7 @@ WORKDIR /my-project
 COPY . .
 COPY --from=dependencies /my-project/node_modules ./node_modules
 RUN rm -r /my-project/node_modules/@next/swc-linux-x64-gnu
-RUN y
+RUN yarn build
 
 FROM node:14-alpine as runner
 WORKDIR /my-project
