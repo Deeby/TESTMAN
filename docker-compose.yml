@@ -1,16 +1,16 @@
-version: "3"
+version: '3'
 services:
   testsman-backend:
     build: ./backend
     image: testsman-backend:latest
     ports:
-      - "8080:8080"
+      - '8080:8080'
 
-  # testsman-frontend:
-  #   build: ./frontend
-  #   image: testsman-frontend:latest
-  #   ports:
-  #     - "80:3000"
+  testsman-frontend:
+    build: ./frontend
+    image: testsman-frontend:latest
+    ports:
+      - '80:3000'
 
   #   nginx:
   #     container_name: nginx-proxy
@@ -19,7 +19,7 @@ services:
   #       - "80:80"
   #     networks:
   #       - proxy
-     
+
   # networks:
 
   #   proxy:
