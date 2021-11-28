@@ -2,7 +2,7 @@ FROM node:14-alpine as dependencies
 WORKDIR /my-project
 COPY package.json yarn.lock ./
 
-RUN npm cache clear
+# RUN npm cache clear
 RUN yarn install --frozen-lockfile
 
 FROM node:14-alpine as builder
