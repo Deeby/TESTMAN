@@ -32,14 +32,11 @@ Frontend :
 Database :
 ```
 - mysql version : 8.0.26
-    - url : [k5d202.p.ssafy.io](http://k5d202.p.ssafy.io/):3306
-    - id : root
-    - pw : d202
 - redis version : alpine
 ```
 ## How to Run
 
-Testman의 실행은 docker-compose로 이루어집니다. 다만 image 컨트롤을 위한 공유 폴더를 만들어야 합니다.
+Testman의 실행은 docker-compose로 이루어집니다.
 
 ### Docker, Docker-compose version!
 
